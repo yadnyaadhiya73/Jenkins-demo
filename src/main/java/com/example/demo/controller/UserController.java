@@ -20,7 +20,7 @@ public class UserController {
     UserService userService;
 
     @PostMapping("/signup")
-    public ResponseEntity<User> saveUser(@RequestBody @Valu UserRequest userRequest){
+    public ResponseEntity<User> saveUser(@RequestBody @Value UserRequest userRequest){
         return new ResponseEntity<>(userService.saveUser(userRequest), HttpStatus.CREATED);
         //return userService.saveUser(userRequest);
 
