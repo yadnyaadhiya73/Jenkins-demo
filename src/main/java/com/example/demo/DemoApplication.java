@@ -14,6 +14,7 @@ public class DemoApplication {
     @PostConstruct
     public void init(){
         logger.info("Application Started");
+        logger.info("Application Started 2nd commit");
     }
 
     public static void main(String[] args) {
